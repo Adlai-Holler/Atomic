@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Atomic/Atomic.xcodeproj">
+      location = "group:Atomic.xcodeproj">
    </FileRef>
 </Workspace>
