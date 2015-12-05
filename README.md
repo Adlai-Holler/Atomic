@@ -21,8 +21,8 @@ final class MyCache<Value> {
     
     func setValue(value: Value, forKey: Key) {
         entries.modify { (var dict) in
-          dict[key] = value
-          return dict
+            dict[key] = value
+            return dict
         }
     }
     
@@ -58,7 +58,7 @@ final class NetworkActivityIndicatorManager {
       let oldValue = count.modify { $0 - 1 }
       if oldValue == 1 {
         dispatch_async(dispatch_get_main_queue()) {
-          UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         }
       }
   }
