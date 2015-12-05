@@ -48,19 +48,20 @@ final class NetworkActivityIndicatorManager {
     func incrementActivityCount() {
         let oldValue = count.modify { $0 + 1 }
         if oldValue == 0 {
-            dispatch_async(dispatch_get_main_queue()) {
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-
-            }
+            updateUI(true)
         }
     }
 
     func decrementActivityCount() {
         let oldValue = count.modify { $0 - 1 }
         if oldValue == 1 {
-            dispatch_async(dispatch_get_main_queue()) {
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-            }
+            updateUI(false)
+        }
+    }
+
+    private func updateUI(on: Bool) {
+        dispatch_async(dispatch_get_main_queue()) {
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         }
     }
 }
