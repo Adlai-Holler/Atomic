@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors = { 'Adlai Holler' => 'him@adlai.io' }
   s.source = { :git => 'https://github.com/Adlai-Holler/Atomic.git', :tag => 'v1.0.0' }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
   
   s.source_files = 'Atomic/*.swift'
 
