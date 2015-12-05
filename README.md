@@ -73,3 +73,7 @@ final class NetworkActivityIndicatorManager {
 - Fast. `pthread_mutex_lock` is faster than `NSLock` and more efficient than `OSSpinLock`.
 - Modern. You can safely `throw` errors inside its methods, uses `@noescape` and generics to make your code as clean as possible.
 - Tested. This thing is tested like crazy, including accessing it concurrently from 100,000 operations!
+
+### Attribution
+
+The original version of `Atomic.swift` was written by the incomparable [Justin Spahr-Summers](https://github.com/jspahrsummers) for [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa).
