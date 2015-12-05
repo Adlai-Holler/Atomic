@@ -41,27 +41,28 @@ final class MyCache<Value> {
 ```swift
 /// Thread-safe manager for the `networkActivityIndicator` on iOS.
 final class NetworkActivityIndicatorManager {
-  static let shared = NetworkActivityIndicatorManager()
-  
-  private let count = Atomic(0)
-  
-  func incrementActivityCount() {
-      let oldValue = count.modify { $0 + 1 }
-      if oldValue == 0 {
-        dispatch_async(dispatch_get_main_queue()) {
-          UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    static let shared = NetworkActivityIndicatorManager()
+
+    private let count = Atomic(0)
+
+    func incrementActivityCount() {
+        let oldValue = count.modify { $0 + 1 }
+        if oldValue == 0 {
+            dispatch_async(dispatch_get_main_queue()) {
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+
+            }
         }
-      }
-  }
-  
-  func decrementActivityCount() {
-      let oldValue = count.modify { $0 - 1 }
-      if oldValue == 1 {
-        dispatch_async(dispatch_get_main_queue()) {
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    }
+
+    func decrementActivityCount() {
+        let oldValue = count.modify { $0 - 1 }
+        if oldValue == 1 {
+            dispatch_async(dispatch_get_main_queue()) {
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            }
         }
-      }
-  }
+    }
 }
 ```
 
