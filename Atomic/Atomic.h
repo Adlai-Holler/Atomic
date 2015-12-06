@@ -6,7 +6,7 @@
 //  Copyright © 2015 Adlai Holler. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Atomic.
 FOUNDATION_EXPORT double AtomicVersionNumber;
