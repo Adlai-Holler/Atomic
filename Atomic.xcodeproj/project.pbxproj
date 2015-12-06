@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CC60355C1C136EE4003ED664 /* Atomic.h in Headers */ = {isa = PBXBuildFile; fileRef = CC60355B1C136EE4003ED664 /* Atomic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC6035631C136EE4003ED664 /* Atomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6035581C136EE4003ED664 /* Atomic.framework */; };
-		CC6035681C136EE4003ED664 /* AtomicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6035671C136EE4003ED664 /* AtomicTests.swift */; };
 		CC6035731C136EF2003ED664 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6035721C136EF2003ED664 /* Atomic.swift */; };
+		CC649D681C14D6840085ADDE /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6035721C136EF2003ED664 /* Atomic.swift */; };
+		CC649D701C14D8E90085ADDE /* AtomicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC649D6F1C14D8E90085ADDE /* AtomicTests.swift */; };
+		CC649D721C14D8E90085ADDE /* Atomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC649D501C14D6500085ADDE /* Atomic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC6035641C136EE4003ED664 /* PBXContainerItemProxy */ = {
+		CC649D731C14D8E90085ADDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CC60354F1C136EE4003ED664 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC6035571C136EE4003ED664;
-			remoteInfo = Atomic;
+			remoteGlobalIDString = CC649D4F1C14D6500085ADDE;
+			remoteInfo = "Atomic-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -27,10 +28,11 @@
 		CC6035581C136EE4003ED664 /* Atomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Atomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60355B1C136EE4003ED664 /* Atomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atomic.h; sourceTree = "<group>"; };
 		CC60355D1C136EE4003ED664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC6035621C136EE4003ED664 /* AtomicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtomicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC6035671C136EE4003ED664 /* AtomicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicTests.swift; sourceTree = "<group>"; };
-		CC6035691C136EE4003ED664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6035721C136EF2003ED664 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		CC649D501C14D6500085ADDE /* Atomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Atomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC649D6D1C14D8E90085ADDE /* AtomicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtomicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC649D6F1C14D8E90085ADDE /* AtomicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicTests.swift; sourceTree = "<group>"; };
+		CC649D711C14D8E90085ADDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +43,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC60355F1C136EE4003ED664 /* Frameworks */ = {
+		CC649D4C1C14D6500085ADDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6035631C136EE4003ED664 /* Atomic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC649D6A1C14D8E90085ADDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC649D721C14D8E90085ADDE /* Atomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				CC60355A1C136EE4003ED664 /* Atomic */,
-				CC6035661C136EE4003ED664 /* AtomicTests */,
+				CC649D6E1C14D8E90085ADDE /* AtomicTests */,
 				CC6035591C136EE4003ED664 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				CC6035581C136EE4003ED664 /* Atomic.framework */,
-				CC6035621C136EE4003ED664 /* AtomicTests.xctest */,
+				CC649D501C14D6500085ADDE /* Atomic.framework */,
+				CC649D6D1C14D8E90085ADDE /* AtomicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,11 +90,11 @@
 			path = Atomic;
 			sourceTree = "<group>";
 		};
-		CC6035661C136EE4003ED664 /* AtomicTests */ = {
+		CC649D6E1C14D8E90085ADDE /* AtomicTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC6035671C136EE4003ED664 /* AtomicTests.swift */,
-				CC6035691C136EE4003ED664 /* Info.plist */,
+				CC649D6F1C14D8E90085ADDE /* AtomicTests.swift */,
+				CC649D711C14D8E90085ADDE /* Info.plist */,
 			);
 			path = AtomicTests;
 			sourceTree = "<group>";
@@ -97,6 +107,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC60355C1C136EE4003ED664 /* Atomic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC649D4D1C14D6500085ADDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,22 +138,40 @@
 			productReference = CC6035581C136EE4003ED664 /* Atomic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC6035611C136EE4003ED664 /* AtomicTests */ = {
+		CC649D4F1C14D6500085ADDE /* Atomic-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC60356F1C136EE4003ED664 /* Build configuration list for PBXNativeTarget "AtomicTests" */;
+			buildConfigurationList = CC649D651C14D6500085ADDE /* Build configuration list for PBXNativeTarget "Atomic-OSX" */;
 			buildPhases = (
-				CC60355E1C136EE4003ED664 /* Sources */,
-				CC60355F1C136EE4003ED664 /* Frameworks */,
-				CC6035601C136EE4003ED664 /* Resources */,
+				CC649D4B1C14D6500085ADDE /* Sources */,
+				CC649D4C1C14D6500085ADDE /* Frameworks */,
+				CC649D4D1C14D6500085ADDE /* Headers */,
+				CC649D4E1C14D6500085ADDE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CC6035651C136EE4003ED664 /* PBXTargetDependency */,
+			);
+			name = "Atomic-OSX";
+			productName = "Atomic-OSX";
+			productReference = CC649D501C14D6500085ADDE /* Atomic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC649D6C1C14D8E90085ADDE /* AtomicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC649D751C14D8E90085ADDE /* Build configuration list for PBXNativeTarget "AtomicTests" */;
+			buildPhases = (
+				CC649D691C14D8E90085ADDE /* Sources */,
+				CC649D6A1C14D8E90085ADDE /* Frameworks */,
+				CC649D6B1C14D8E90085ADDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC649D741C14D8E90085ADDE /* PBXTargetDependency */,
 			);
 			name = AtomicTests;
 			productName = AtomicTests;
-			productReference = CC6035621C136EE4003ED664 /* AtomicTests.xctest */;
+			productReference = CC649D6D1C14D8E90085ADDE /* AtomicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +187,10 @@
 					CC6035571C136EE4003ED664 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
-					CC6035611C136EE4003ED664 = {
+					CC649D4F1C14D6500085ADDE = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					CC649D6C1C14D8E90085ADDE = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -170,7 +208,8 @@
 			projectRoot = "";
 			targets = (
 				CC6035571C136EE4003ED664 /* Atomic */,
-				CC6035611C136EE4003ED664 /* AtomicTests */,
+				CC649D4F1C14D6500085ADDE /* Atomic-OSX */,
+				CC649D6C1C14D8E90085ADDE /* AtomicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,7 +222,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC6035601C136EE4003ED664 /* Resources */ = {
+		CC649D4E1C14D6500085ADDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC649D6B1C14D8E90085ADDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,21 +247,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC60355E1C136EE4003ED664 /* Sources */ = {
+		CC649D4B1C14D6500085ADDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6035681C136EE4003ED664 /* AtomicTests.swift in Sources */,
+				CC649D681C14D6840085ADDE /* Atomic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC649D691C14D8E90085ADDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC649D701C14D8E90085ADDE /* AtomicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC6035651C136EE4003ED664 /* PBXTargetDependency */ = {
+		CC649D741C14D8E90085ADDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC6035571C136EE4003ED664 /* Atomic */;
-			targetProxy = CC6035641C136EE4003ED664 /* PBXContainerItemProxy */;
+			target = CC649D4F1C14D6500085ADDE /* Atomic-OSX */;
+			targetProxy = CC649D731C14D8E90085ADDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -344,23 +398,73 @@
 			};
 			name = Release;
 		};
-		CC6035701C136EE4003ED664 /* Debug */ = {
+		CC649D611C14D6500085ADDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = AtomicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = adlai.AtomicTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Atomic-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "adlai.Atomic-OSX";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		CC6035711C136EE4003ED664 /* Release */ = {
+		CC649D621C14D6500085ADDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Atomic-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "adlai.Atomic-OSX";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CC649D761C14D8E90085ADDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AtomicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = adlai.AtomicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CC649D771C14D8E90085ADDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtomicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = adlai.AtomicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -385,14 +489,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC60356F1C136EE4003ED664 /* Build configuration list for PBXNativeTarget "AtomicTests" */ = {
+		CC649D651C14D6500085ADDE /* Build configuration list for PBXNativeTarget "Atomic-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC6035701C136EE4003ED664 /* Debug */,
-				CC6035711C136EE4003ED664 /* Release */,
+				CC649D611C14D6500085ADDE /* Debug */,
+				CC649D621C14D6500085ADDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		CC649D751C14D8E90085ADDE /* Build configuration list for PBXNativeTarget "AtomicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC649D761C14D8E90085ADDE /* Debug */,
+				CC649D771C14D8E90085ADDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
