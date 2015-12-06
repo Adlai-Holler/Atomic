@@ -76,4 +76,4 @@ final class NetworkActivityIndicatorManager {
 
 ### Attribution
 
-The original version of `Atomic.swift` was written by the incomparable [Justin Spahr-Summers](https://github.com/jspahrsummers) for [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa).
+The original version of `Atomic.swift` was written by the folks at [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa).
