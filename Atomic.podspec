@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Atomic'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.license = 'MIT'
   s.summary = 'Atomic is a fast, safe way to make values atomic (thread-safe).'
   s.homepage = 'https://github.com/Adlai-Holler/Atomic'
