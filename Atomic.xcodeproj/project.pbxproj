@@ -12,6 +12,8 @@
 		CC649D681C14D6840085ADDE /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6035721C136EF2003ED664 /* Atomic.swift */; };
 		CC649D701C14D8E90085ADDE /* AtomicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC649D6F1C14D8E90085ADDE /* AtomicTests.swift */; };
 		CC649D721C14D8E90085ADDE /* Atomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC649D501C14D6500085ADDE /* Atomic.framework */; };
+		CCDAC6C31C5F2D3700255715 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC6C21C5F2D3700255715 /* Lock.swift */; };
+		CCDAC6C41C5F2ECC00255715 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC6C21C5F2D3700255715 /* Lock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 		CC649D6D1C14D8E90085ADDE /* AtomicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtomicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC649D6F1C14D8E90085ADDE /* AtomicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicTests.swift; sourceTree = "<group>"; };
 		CC649D711C14D8E90085ADDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDAC6C21C5F2D3700255715 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 			children = (
 				CC60355B1C136EE4003ED664 /* Atomic.h */,
 				CC6035721C136EF2003ED664 /* Atomic.swift */,
+				CCDAC6C21C5F2D3700255715 /* Lock.swift */,
 				CC60355D1C136EE4003ED664 /* Info.plist */,
 			);
 			path = Atomic;
@@ -243,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDAC6C31C5F2D3700255715 /* Lock.swift in Sources */,
 				CC6035731C136EF2003ED664 /* Atomic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDAC6C41C5F2ECC00255715 /* Lock.swift in Sources */,
 				CC649D681C14D6840085ADDE /* Atomic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				CC649D621C14D6500085ADDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC649D751C14D8E90085ADDE /* Build configuration list for PBXNativeTarget "AtomicTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				CC649D771C14D8E90085ADDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

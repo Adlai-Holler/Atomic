@@ -55,7 +55,11 @@ class AtomicTests: XCTestCase {
             didCatch = true
             XCTAssertEqual(error, NSError(domain: NSCocoaErrorDomain, code: 10, userInfo: nil))
         }
-        XCTAssert(pthread_mutex_trylock(&atomic._lock) == 0)
+        if atomic.lock.tryLock() == 0 {
+            atomic.lock.unlock()
+        } else {
+            XCTFail()
+        }
         XCTAssert(didCatch)
     }
 
@@ -71,7 +75,11 @@ class AtomicTests: XCTestCase {
             didCatch = true
             XCTAssertEqual(error, NSError(domain: NSCocoaErrorDomain, code: 10, userInfo: nil))
         }
-        XCTAssert(pthread_mutex_trylock(&atomic._lock) == 0)
+        if atomic.lock.tryLock() == 0 {
+            atomic.lock.unlock()
+        } else {
+            XCTFail()
+        }
         XCTAssert(didCatch)
     }
 
