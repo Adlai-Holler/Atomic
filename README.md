@@ -1,5 +1,5 @@
 ## Atomic
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)  [![Cocoapods compatible](https://img.shields.io/cocoapods/v/Atomic.svg)](https://cocoapods.org) [![Cocoapods compatible](https://img.shields.io/cocoapods/p/Atomic.svg)](https://cocoapods.org)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)  [![CocoaPods compatible](https://img.shields.io/cocoapods/v/Atomic.svg)](https://cocoapods.org) [![CocoaPods compatible](https://img.shields.io/cocoapods/p/Atomic.svg)](https://cocoapods.org)
 
 Atomic is a fast, safe class for making values thread-safe in Swift. It is backed by `pthread_mutex_lock` which is the fastest, most-efficient locking mechanism available.
 
